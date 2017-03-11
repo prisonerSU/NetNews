@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cpt-wy-kIC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dyi-cW-EL1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,13 +37,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYt-7f-tpl">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="OsX-b1-Ykl"/>
-                                </constraints>
-                            </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Csf-jm-bkp">
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,19 +57,32 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYt-7f-tpl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="OsX-b1-Ykl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="r58-DY-99z"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Csf-jm-bkp" firstAttribute="leading" secondItem="QD6-bX-lQS" secondAttribute="leading" id="Dlh-YJ-yX0"/>
-                            <constraint firstAttribute="trailing" secondItem="qYt-7f-tpl" secondAttribute="trailing" id="WwG-PO-oWi"/>
-                            <constraint firstItem="9t0-ZQ-5V5" firstAttribute="top" secondItem="Csf-jm-bkp" secondAttribute="bottom" id="fLY-4F-AhQ"/>
-                            <constraint firstAttribute="trailing" secondItem="Csf-jm-bkp" secondAttribute="trailing" id="piQ-4k-axv"/>
-                            <constraint firstItem="qYt-7f-tpl" firstAttribute="top" secondItem="Rmv-c7-vj7" secondAttribute="bottom" id="qEi-kf-egi"/>
-                            <constraint firstItem="Csf-jm-bkp" firstAttribute="top" secondItem="qYt-7f-tpl" secondAttribute="bottom" id="rgv-4C-rmS"/>
-                            <constraint firstItem="qYt-7f-tpl" firstAttribute="leading" secondItem="QD6-bX-lQS" secondAttribute="leading" id="wZe-xS-wsB"/>
+                            <constraint firstAttribute="trailing" secondItem="Csf-jm-bkp" secondAttribute="trailing" id="5Cq-AX-DVD"/>
+                            <constraint firstItem="qYt-7f-tpl" firstAttribute="top" secondItem="Rmv-c7-vj7" secondAttribute="bottom" id="EmI-3Z-FYy"/>
+                            <constraint firstItem="qYt-7f-tpl" firstAttribute="leading" secondItem="QD6-bX-lQS" secondAttribute="leading" id="SPz-Vs-Ljd"/>
+                            <constraint firstItem="Csf-jm-bkp" firstAttribute="leading" secondItem="QD6-bX-lQS" secondAttribute="leading" id="boA-vi-0xQ"/>
+                            <constraint firstAttribute="trailing" secondItem="qYt-7f-tpl" secondAttribute="trailing" id="fRr-FG-qBc"/>
+                            <constraint firstAttribute="bottom" secondItem="Csf-jm-bkp" secondAttribute="bottom" id="s5L-XW-2qh"/>
+                            <constraint firstItem="Csf-jm-bkp" firstAttribute="top" secondItem="qYt-7f-tpl" secondAttribute="bottom" id="uxl-nM-eVg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="网易新闻" id="hZR-Cp-DRD"/>
+                    <connections>
+                        <outlet property="ChannelScrollView" destination="qYt-7f-tpl" id="Fi8-7R-CTS"/>
+                        <outlet property="NewsCollectionView" destination="Csf-jm-bkp" id="kaJ-2p-lSk"/>
+                        <outlet property="NewsFlowLayout" destination="4Cx-aH-3T5" id="cba-zE-lNO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="piS-PG-jse" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

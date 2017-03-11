@@ -15,6 +15,7 @@
 		71CA4D2A1E72CA1B00A2E452 /* HXChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CA4D241E72CA1B00A2E452 /* HXChannelModel.m */; };
 		71CA4D2B1E72CA1B00A2E452 /* HXHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CA4D281E72CA1B00A2E452 /* HXHomeVC.m */; };
 		71CA4D2D1E72CC3000A2E452 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 71CA4D2C1E72CC3000A2E452 /* topic_news.json */; };
+		71CA4D301E72D08700A2E452 /* ChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CA4D2F1E72D08700A2E452 /* ChannelLabel.m */; };
 		B5831111514ECE0048BB41FC /* libPods-HX-NetNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F388BD78BD0719EB5F3C00 /* libPods-HX-NetNews.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		71CA4D271E72CA1B00A2E452 /* HXHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXHomeVC.h; sourceTree = "<group>"; };
 		71CA4D281E72CA1B00A2E452 /* HXHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXHomeVC.m; sourceTree = "<group>"; };
 		71CA4D2C1E72CC3000A2E452 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		71CA4D2E1E72D08700A2E452 /* ChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelLabel.h; sourceTree = "<group>"; };
+		71CA4D2F1E72D08700A2E452 /* ChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelLabel.m; sourceTree = "<group>"; };
 		71F388BD78BD0719EB5F3C00 /* libPods-HX-NetNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HX-NetNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66C190FACE110C593F32AB2 /* Pods-HX-NetNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HX-NetNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-HX-NetNews/Pods-HX-NetNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +150,8 @@
 		71CA4D291E72CA1B00A2E452 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				71CA4D2E1E72D08700A2E452 /* ChannelLabel.h */,
+				71CA4D2F1E72D08700A2E452 /* ChannelLabel.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				71CA4D2A1E72CA1B00A2E452 /* HXChannelModel.m in Sources */,
 				71CA4D0B1E72C97900A2E452 /* main.m in Sources */,
 				71CA4D2B1E72CA1B00A2E452 /* HXHomeVC.m in Sources */,
+				71CA4D301E72D08700A2E452 /* ChannelLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
